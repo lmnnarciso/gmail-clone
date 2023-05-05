@@ -8,11 +8,22 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --gold-fill: hsl(44, 92%, 58%);
+    --ggray: #474747;
+    --gdark-gray: #2c2c2c;
+    --gwhite: #e0e0e0;
+    --goffwhite: #b0b0b0;
+    --nav-width: 16rem;
   }
 }
 
