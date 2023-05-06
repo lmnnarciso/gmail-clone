@@ -21,9 +21,9 @@ export function SideNav({ isOpen }: { isOpen: boolean }) {
       <div className="flex items-center pl-4 my-8">
         <button
           className={clsx(
-            `flex items-center gap-2 text-black transition-[min-width, width, flex-grow, flex-shrink] duration-150
-            bg-white rounded-2xl px-6 h-[56px]`,
-            isOpen ? "min-w-[56px] px-0 gap-0" : "min-w-[96px] w-auto"
+            `flex items-center gap-2 text-black transition-[min-width, width, flex-grow, flex-shrink, padding] duration-150
+            bg-white rounded-2xl h-[56px]`,
+            isOpen ? "min-w-[56px] px-0 gap-0" : "px-6 min-w-[96px] w-auto"
           )}
         >
           <span className="mx-auto">

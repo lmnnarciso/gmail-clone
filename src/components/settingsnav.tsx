@@ -5,6 +5,7 @@ import {
   ChevronRight,
   Keyboard,
 } from "lucide-react";
+import { Button } from "./button";
 
 export function SettingsNav() {
   return (
@@ -23,29 +24,29 @@ export function SettingsNav() {
             )}
           />
         </label>
-        <button>
+        <Button>
           <ChevronDownSquare />
-        </button>
+        </Button>
       </div>
       <div className="flex ml-auto text-xs items-center">
-        <div>
+        <Button>
           <span>1 - 50</span>
           <span> of </span>
           <span>9999</span>
-        </div>
+        </Button>
         <div className="flex items-center">
-          <button>
+          <Button variant="rounded">
             <ChevronLeft />
-          </button>
-          <button>
+          </Button>
+          <Button variant="rounded">
             <ChevronRight />
-          </button>
-          <button>
+          </Button>
+          <Button>
             <Keyboard />
-          </button>
-          <button className="h-full p-2">
+          </Button>
+          <Button className="h-full p-2">
             <ChevronDownSquare height="14px" width="14px" />
-          </button>
+          </Button>
         </div>
       </div>
     </div>
