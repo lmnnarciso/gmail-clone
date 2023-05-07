@@ -12,22 +12,23 @@ const tabData = [
 export function Tabs() {
   const [selected, setSelected] = useState("Primary");
   return (
-    <div className="tabs flex h-[56px] relative">
+    <div className="tabs relative flex h-[56px]">
       {tabData.map((tab) => (
         <button
+          key={tab.name}
           onClick={() => {
             setSelected(tab.name);
           }}
           className={clsx(
             `
-            flex items-center  gap-4 
-            h-full border-white border-solid hover:bg-input max-w-[252px] w-full relative
+            relative flex  h-full 
+            w-full max-w-[252px] items-center gap-4 border-solid border-white hover:bg-input
             
           `,
             selected === tab.name
               ? `
-                before:block before:absolute before:mx-4 before:h-[3px] before:bg-white
-                before:bottom-0 before:left-0 before:right-0 before:rounded-tr-md before:rounded-tl-md`
+                before:absolute before:bottom-0 before:left-0 before:right-0 before:mx-4
+                before:block before:h-[3px] before:rounded-tl-md before:rounded-tr-md before:bg-white`
               : "text-[var(--goffwhite)]"
           )}
         >

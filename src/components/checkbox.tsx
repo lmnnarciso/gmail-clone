@@ -54,7 +54,7 @@ const Checkbox = React.forwardRef<
       )}
       {...props}
       onClick={(e) => {
-        console.log({e})
+        console.log({ e });
       }}
     >
       <CheckboxPrimitive.Indicator
@@ -65,5 +65,5 @@ const Checkbox = React.forwardRef<
     </CheckboxPrimitive.Root>
   );
 });
-
+Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 export { Checkbox };
