@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter, sans-serif"],
+    },
     extend: {
       gridTemplateAreas: {
         layout: ["header header", "sidebar content"],
@@ -26,6 +29,7 @@ module.exports = {
         content: "rgb(44, 44, 44)",
         gold: "hsl(44, 92%, 58%)",
         "primary-gray": "#c4c7c5",
+        // white: "rgb(255, 255, 255",
         "secondary-gray": "rgb(68, 68, 68)",
         selected: "rgba(255,255,255,.3)",
         hovered: "rgba(255,255,255,.2)",

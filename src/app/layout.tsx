@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="grid grid-areas-layout grid-cols-layout grid-rows-layout h-full">
+        <main className="grid h-full grid-cols-layout grid-rows-layout grid-areas-layout">
           <NavGroup />
-          <div className="grid-in-content h-full flex p-4">
-            <div className="flex-1 bg-content h-full rounded-2xl">
+          <div className="flex h-full p-4 grid-in-content">
+            <div className="h-full flex-1 rounded-2xl bg-content">
               {children}
             </div>
           </div>

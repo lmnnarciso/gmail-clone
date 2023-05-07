@@ -3,11 +3,14 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  async rewrites() {
+  basePath: "/inbox",
+  async redirects() {
     return [
       {
         source: "/",
         destination: "/inbox",
+        basePath: false,
+        permanent: false,
       },
     ];
   },

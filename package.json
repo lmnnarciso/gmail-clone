@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.14",
     "@radix-ui/react-accessible-icon": "^1.0.1",
     "@radix-ui/react-accordion": "^1.1.0",
     "@radix-ui/react-alert-dialog": "^1.0.2",
@@ -56,6 +57,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@savvywombat/tailwindcss-grid-areas": "^3.0.1"
+    "@savvywombat/tailwindcss-grid-areas": "^3.0.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8"
   }
 }

@@ -18,12 +18,12 @@ export default function Inbox() {
             .map((_) => (
               <div
                 className="
-                flex flex-1 py-[10px] items-center 
-                justify-even p-4 
-                first-of-type:border-t border-b border-input 
-                cursor-pointer
-               hover:shadow-white hover:shadow-sm 
-                min-w-0
+                justify-even flex min-w-0 flex-1 
+                cursor-pointer items-center 
+                border-b border-input p-4 
+                py-[10px]
+               first-of-type:border-t hover:shadow-sm 
+                hover:shadow-white
                "
               >
                 <div className="flex gap-4">
@@ -45,7 +45,7 @@ export default function Inbox() {
                 </div>
                 <div className="mx-8">The subject</div>
                 <div className="min-w-0 flex-1">
-                  <div className="line-clamp-1 overflow-hidden text-ellipsis max-w-full">
+                  <div className="line-clamp-1 max-w-full overflow-hidden text-ellipsis">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Fugiat harum repellat hic quam accusantium, pariatur nostrum
                     voluptatum sunt iusto velit deleniti quos maxime sapiente,
