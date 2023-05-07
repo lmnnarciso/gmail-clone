@@ -33,6 +33,7 @@ module.exports = {
         "secondary-gray": "rgb(68, 68, 68)",
         selected: "rgba(255,255,255,.3)",
         hovered: "rgba(255,255,255,.2)",
+        "hovered-dark": "rgba(0,0,0,.1)",
       },
     },
   },

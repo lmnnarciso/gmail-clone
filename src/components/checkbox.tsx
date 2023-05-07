@@ -36,23 +36,26 @@ const Checkbox = React.forwardRef<
     <CheckboxPrimitive.Root
       ref={ref}
       className={cn(
-        `h-4 w-4 rounded-sm border-2 border-secondary-gray hover:border-primary-gray relative
-          translate-y-[3px]
-        after:content-[""]
-        after:absolute
-        after:top-[-14px] after:bottom-[-7px] after:right-[-7px] after:left-[-14px]
-        after:w-[40px] after:h-[40px]
-        after:transition-[opacity,transform] after:z-[1] 
-        after:rounded-full
+        `relative h-4 w-4 translate-y-[3px] rounded-sm border-2 border-secondary-gray
+          after:absolute
+        after:bottom-[-7px]
+        after:left-[-14px]
+        after:right-[-7px] after:top-[-14px] after:z-[1] after:h-[40px]
+        after:w-[40px] after:scale-[1]
+        after:rounded-full after:bg-hovered 
         after:opacity-[0]
-        after:hover:opacity-[1]
-        after:scale-[1]
-       after:bg-hovered
+        after:transition-[opacity,transform]
+        after:content-[""]
+        hover:border-primary-gray
+       after:hover:opacity-[1]
         
         `,
         className
       )}
-      // {...props}
+      {...props}
+      onClick={(e) => {
+        console.log({e})
+      }}
     >
       <CheckboxPrimitive.Indicator
         className={cn("flex items-center justify-center")}

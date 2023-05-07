@@ -13,13 +13,7 @@ export default function Home() {
       {/* TABS */}
       <Tabs />
       {/* TAB CONTENT */}
-      <div className="flex flex-col">
-        {Array(10)
-          .fill("*")
-          .map((_, idx) => (
-            <ListItem key={idx} subject="The subject" content="Lorem Ipsum" />
-          ))}
-      </div>
+      <div className="flex flex-col"></div>
     </>
   );
 }
